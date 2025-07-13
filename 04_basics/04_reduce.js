@@ -14,3 +14,24 @@
 const arr=[1,2,3,4,5,6]
 const sumAllValue = arr.reduce((acc , curr)=>acc+curr,0)
 console.log(sumAllValue);
+// .............Example Shopping cart..........................
+const ShoppingCart = [
+    {
+        itemName : "py Course",
+        price:999
+    },
+    {
+        itemName : "Mobile dev Course",
+        price:5999
+    },
+    {
+        itemName : "Java Course",
+        price:2999
+    },
+    {
+        itemName : "AI Course",
+        price:8999
+    }
+]
+const finalPrice = ShoppingCart.reduce((acc,item)=>(acc+item.price),0)
+console.log(`Final price is: ${finalPrice}`);
