@@ -46,3 +46,28 @@ form.addEventListener('submit',(e)=>{
   }
 })
 ```
+## Project 3
+```javascript
+const randomColor = function(){
+  let Hex = '0123456789ABCDEF'
+  color = '#'
+  for(i=0; i<6; i++){
+    color+=Hex[Math.floor(Math.random()*16)]
+  }
+  return color;
+}
+let intervalId;
+const startChangingcolor = function(){
+
+  intervalId=setInterval(changeBgColor, 1000)
+  function changeBgColor(){
+    document.body.style.backgroundColor = randomColor();
+  }
+    
+}
+const endChangingcolor = function(){
+  clearInterval(intervalId);
+}
+document.querySelector('#start').addEventListener('click', startChangingcolor)
+document.querySelector('#stop').addEventListener('click', endChangingcolor)
+```
