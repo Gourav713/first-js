@@ -46,7 +46,6 @@ form.addEventListener('submit',(e)=>{
   }
 })
 ```
-<<<<<<< HEAD
 
 ## Project 3
 ```javascript
@@ -58,7 +57,6 @@ setInterval(()=>{
 },1000)
 
 ```
-=======
 ## Project 3
 ```javascript
 const randomColor = function(){
